@@ -8,6 +8,11 @@
         padding: 0;
         box-sizing: border-box;
     }
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #121212;
+        margin: 0;
+    }
     .navbar {
         background: rgb(0, 0, 0);
         padding: 15px;
@@ -50,12 +55,6 @@
     footer p {
         margin: 0;
     }
-    body {
-        background-size: cover;
-        margin: 0;
-        font-family: 'Roboto', sans-serif;
-        background-color: #121212;
-    }
     .section1 {
         display: flex;
         align-items: center;
@@ -78,21 +77,20 @@
         margin: 20px 0;
     }
     .button1 {
-            padding: 12px 25px;
-            border-radius: 25px;
-            border: none;
-            background-color: #ff0000;
-            color: #ffffff;
-            font-weight: 600;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-            
-        }
+        padding: 12px 25px;
+        border-radius: 25px;
+        border: none;
+        background-color: #ff0000;
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
 
-        .button1:hover {
-            background-color: #ff6161;
-        }
+    .button1:hover {
+        background-color: #ff6161;
+    }
 
     .section2 {
         background-color: #181818;
@@ -136,14 +134,14 @@
         margin-bottom: 20px;
     }
     .section5 {
-    background-image: url("logos and icons/podcast-background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 250px 0;
-    text-align: right;
-    padding-right: 200px;
-    color: white;
+        background-image: url("logos and icons/podcast-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 250px 0;
+        text-align: right;
+        padding-right: 200px;
+        color: white;
     }
 
     .iconstable {
@@ -161,48 +159,71 @@
         transform: scale(1.1);
     }
     .Panelist {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 100px ;
-            background-color: #2b2b2b;
-            margin: 20px auto;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px;
+        background-color: #2b2b2b;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        color: #ffffff;
+    }
+    .Panelist img {
+        border-radius: 15px;
+        max-width: 100%;
+        height: auto;
+    }
+    .Panelist h1 {
+        font-size: 24px;
+        margin-top: 10px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .Panelist h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: crimson;
+    }
+    .Panelist p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 10px;
+        color: #e0e0e0;
+    }
+    .left {
+        text-align: center;
+        flex: 1;
+    }
+    .right {
+        text-align: left;
+        flex: 2;
+        padding-left: 20px;
+    }
+    @media (max-width: 768px) {
+        .navdiv {
+            flex-wrap: wrap;
+        }
+        .section1 {
+            flex-direction: column;
+            text-align: center;
+        }
+        .section1 img {
+            margin: 0 0 20px 0;
+        }
+        .Panelist {
+            flex-direction: column;
+            padding: 20px;
         }
         .Panelist img {
-            border-radius: 15px;
-            max-width: 100%;
-            height: auto;
+            margin-bottom: 20px;
         }
-        .Panelist h1 {
-            font-size: 24px;
-            margin-top: 10px;
-            color: #ffffff;
+        .section5 {
+            padding: 150px 20px;
             text-align: center;
         }
-        .Panelist h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: crimson;
-        }
-        .Panelist p {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-top: 10px;
-            color: #e0e0e0;
-        }
-        .left {
-            text-align: center;
-            flex: 1;
-        }
-        .right {
-            text-align: left;
-            flex: 2;
-            padding-left: 20px;
-        }
+    }
 </style>
 
 <head>
@@ -228,17 +249,15 @@
         <div>
             <h2>An <span style="color: crimson;">Award-Winning</span><br> Podcast Network</h2>
             <p>Break The Matrix is the most popular network in the United States of America.</p>
-           <button class="button1"><a href="about.html" style="color: #ffffff;">About us</a></button>
+            <button class="button1"><a href="about.html" style="color: #ffffff;">About us</a></button>
         </div>
     </div>
 
     <div class="Panelist">
-        <!-- Left side: Image and name -->
         <div class="left">
             <img src="logos and icons/mary ann.jpg" alt="Mary Ann" height="350px" width="300px">
             <h1>Mary Ann</h1>
         </div>
-        <!-- Right side: New Panelist text -->
         <div class="right">
             <h1>Our New Panelist</h1>
             <br>
